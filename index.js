@@ -8,7 +8,6 @@ const bodyParser = require("body-parser");
 const errorHandler = require("middleware/error-handler");
 const swaggerUi = require("swagger-ui-express");
 const port = generalConfig.SERVERPORT ? generalConfig.SERVERPORT : 4000;
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors()); // enable cross origin request
